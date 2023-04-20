@@ -1,0 +1,41 @@
+{
+  "settings": {
+    "screenshots_enabled": true
+  },
+  "rules": [
+    {
+      "patterns": [
+        ".*"
+      ],
+      "properties": {
+        "context": "default",
+        "uri": "turbo://fragment/web",
+        "fallback_uri": "turbo://fragment/web",
+        "pull_to_refresh_enabled": true
+      }
+    },
+    {
+      "patterns": [
+        "^$",
+        "^/$",
+        "/annoucements$",
+        "/notifications$"
+      ],
+      "properties": {
+        "uri": "turbo://fragment/web",
+        "presentation": "replace_root"
+      }
+    },
+    {
+      "patterns": [
+        "/new$",
+        "/edit$"
+      ],
+      "properties": {
+        "context": "modal",
+        "uri": "turbo://fragment/web/modal",
+        "pull_to_refresh_enabled": false
+      }
+    }
+  ]
+}
