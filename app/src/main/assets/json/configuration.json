@@ -33,7 +33,7 @@
       ],
       "properties": {
         "context": "modal",
-        "uri": "turbo://fragment/web/modal",
+        "uri": "turbo://fragment/web/modal/sheet",
         "pull_to_refresh_enabled": false
       }
     }

@@ -17,9 +17,12 @@ interface NavDestination: TurboNavDestination {
         newPathProperties: TurboPathConfigurationProperties
     ): NavOptions {
         return when (newPathProperties.context) {
-            TurboNavPresentationContext.MODAL -> slideAnimation()
+            TurboNavPresentationContext.MODAL -> noAnim()
             else -> super.getNavigationOptions(newLocation, newPathProperties)
         }
+    }
+    private fun noAnim(): NavOptions {
+        return navOptions {  }
     }
     private fun slideAnimation(): NavOptions { return navOptions {
         anim {

@@ -8,6 +8,6 @@
         android:layout_height="24dp"
         android:layout_gravity="center"
         android:layout_marginEnd="12dp"
-        android:indeterminateTint="?colorSecondary" />
+        android:indeterminateTint="@color/color_secondary" />
 
 </FrameLayout>

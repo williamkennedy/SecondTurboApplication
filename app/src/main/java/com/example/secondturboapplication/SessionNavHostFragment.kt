@@ -14,7 +14,8 @@ class SessionNavHostFragment : TurboSessionNavHostFragment() {
     override val registeredFragments: List<KClass<out Fragment>>
         get() = listOf(
             WebFragment::class,
-//            ModalWebFragment::class
+            WebModalFragment::class,
+            WebBottomSheetFragment::class
         )
 
     override fun onSessionCreated() {
